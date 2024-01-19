@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: blue;
+    text-decoration: underline;
+}
+
+h1.first {
+    color: green;
+}
+
+h1.sachin {
+    text-decoration: underline;
+}
+
+h1.first#myh1 {
+    background-color: yellow;
+    color: rgb(75, 165, 42) !important;
+}
+
+ul {
+    /* list-style-image: url('./star1.png'); */
+}
+
+/* Paragraph elements */
+p {
+    color: chartreuse;
+}
+
+p {
+    color: darkmagenta;
+}
+
+#myp {
+    background-color: bisque;
+}
+
+th.class-1 {
+    color: tomato;
+}
+
+th.class-1:hover {
+    color: blue;
+}
+
+[aria-details] {
+    color: red;
+}
+
+li {
+    font-weight: bold;
+    transition: all 1.3s;
+}
+
+li:hover {
+    color: green;
+    background-color: aquamarine;
+}
+
+div#div1 {
+    background-color: rgba(255, 0, 23, 1);
+    padding: 50px 40px;
+    margin: 50px 40px 30px 20px;
+    border: 7px double;
+    font-size: 20px;
+    /* width: 400px; */
+    /* height: 200px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 0px 40px red;
+    transition: all 5.5s;
+    /* overflow: scroll; */
+}
+
+div#div1:hover {
+    border: 7px double blue;
+}
+
+div#div1 > div {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+#div1 > div > span {
+    background-color: coral;
+    padding: 20px;
+    margin: 30px;
+    text-shadow: 4px 4px 8px green;
+    font-size: 100px;
+}
+
+span#span1 {
+    background-color: aqua;
+    margin: 200px;
+    padding: 10px;
+    border: 5px dotted green;
+}
+
+/* div#div1 > div:nth-child(1) > div {
+    font-weight: bold;
+    background-color: blueviolet;
+}
+
+div#div1 > div:nth-child(1) > div > span {
+    font-weight: bold;
+    background-color: crimson;
+}
+
+div#div1 > div:nth-child(2) {
+    background-color: burlywood;
+    text-align: center;
+}
+
+div#div1 > div:nth-child(3) {
+    background-color: cornflowerblue;
+    text-align: center;
+} */
