@@ -233,20 +233,39 @@ function create() {
 
 function addRows(evt) {
     console.log(evt);
-    let tbody = document.getElementById('student-tbody');
+    let tbody = document.getElementById('student-tbody'); // reference to the table body
 
     for(let i = 0; i < students.length; i++) {
-        let tr = document.createElement('tr');
+        let tr = document.createElement('tr'); // create a new row
 
-        let tdId = document.createElement('td');
-        tdId.innerText = students[i].id;
+        let tdId = document.createElement('td'); // create TD 1
+        tdId.innerText = students[i].id; // Put student id in first column
 
-        let tdName = document.createElement('td');
-        tdName.innerText = students[i].name;
+        let tdName = document.createElement('td'); // create TD 2
+        tdName.innerText = students[i].name; // Put student name
 
-        tr.appendChild(tdId);
+        let tdAction = document.createElement('td');
+        
+        let btn = document.createElement('button');
+        btn.innerText = 'Show';
+        btn.className = 'btn btn-info';
+
+        tdAction.appendChild(btn); // Append btn to the td
+
+        tr.appendChild(tdId); // Append td to the tr
         tr.appendChild(tdName);
+        tr.appendChild(tdAction);
 
-        tbody.appendChild(tr);
+        tbody.appendChild(tr); // Append tr to the tbody
     }
+}
+
+let jsonObj = {
+    "prop1": "value 1",
+    "prop2": 23,
+    "prop3": true,
+    "prop4": {
+        "prop4_1": ""
+    },
+    "prop5": []
 }
